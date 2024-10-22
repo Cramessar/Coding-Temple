@@ -1,13 +1,15 @@
 #Probably overkill for something simple, but I was feeling lazy when asked to enter the director.
 #I wasnt sure what would happen if more than one movie shared the same name so I figured showing the movie poster might be a good idea.
-#also I didnt want to create too many dependiencies like being able to navigate an app with pyqt or using something web based with flask so I thought this might be easy enough to use.
+#Also I didnt want to create too many dependiencies like being able to navigate an app with pyqt or using something web based with flask so I thought this might be easy enough to use.
+# https://github.com/Cramessar/Coding-Temple/blob/main/Favorite_Movies_Project.py
 
 import requests
-import webbrowser
-from PIL import Image #requires pillow, pip install pillow in terminal
+from PIL import Image #requires pillow, "pip install pillow" in terminal
 from io import BytesIO
+import webbrowser
 
 movies = {}
+
 
 def fetch_movie_data(title):
     api_key = "d549d0ec"  # Replace with your API key from IMDB, https://www.omdbapi.com/apikey.aspx
@@ -22,7 +24,7 @@ def fetch_movie_data(title):
                 'rating': data.get('Rated', 'N/A'),
                 'director': data.get('Director', 'N/A'),
                 'year': data.get('Year', 'N/A'),
-                'poster': data.get('Poster', None)
+                'poster': data.get('Poster', None)  
             }
         else:
             print(f"Movie '{title}' not found in OMDb API.\n")
@@ -36,9 +38,21 @@ def show_poster(poster_url):
     if poster_url:
         response = requests.get(poster_url)
         img = Image.open(BytesIO(response.content))  
-        img.show()  
+        img.show() 
     else:
         print("No poster available.")
+
+
+def get_amazon_link(title):
+    search_title = title.replace(' ', '+')
+    amazon_url = f"https://www.amazon.com/s?k={search_title}"
+    return amazon_url
+
+
+def open_amazon_link(title):
+    url = get_amazon_link(title)
+    print(f"\nYou can view the movie on Amazon here: {url}")
+    webbrowser.open(url)  
 
 
 def add_movie():
@@ -48,8 +62,8 @@ def add_movie():
     if movie_data:
         movies[title] = movie_data
         print(f"\n'{title}' has been added to your movie list.\n")
-        # Shows the poster, didnt want to sped too much time figuring sizing issues because its small so my bad for that. 
         show_poster(movie_data['poster'])
+        open_amazon_link(title)
 
 
 def remove_movie():
@@ -68,9 +82,9 @@ def display_movies():
             print(f"\nTitle: {title}\nGenre: {details['genre']}\nRating: {details['rating']}\nDirector: {details['director']}\nYear: {details['year']}")
             if details['poster']:
                 print(f"Poster URL: {details['poster']}")
+            print(f"Amazon Link: {get_amazon_link(title)}")
     else:
         print("\nYour movie list is currently empty.\n")
-
 
 def show_menu():
     print("\nMenu:")
@@ -78,7 +92,6 @@ def show_menu():
     print("2. Remove a movie")
     print("3. View movie list")
     print("4. Quit")
-
 
 def calc_input():
     while True:
@@ -92,11 +105,10 @@ def calc_input():
         elif choice == '3':
             display_movies()
         elif choice == '4':
-            print("\nExiting the program. Goodbye!")
+            print("\nBuy your favorite movies, dont watch them illegally. Goodbye!")
             break
         else:
             print("\nInvalid choice, please try again.\n")
-
 
 if __name__ == "__main__":
     calc_input()
