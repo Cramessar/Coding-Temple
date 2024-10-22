@@ -1,7 +1,8 @@
 #Probably overkill for something simple, but I was feeling lazy when asked to enter the director.
 #I wasnt sure what would happen if more than one movie shared the same name so I figured showing the movie poster might be a good idea.
 #Also I didnt want to create too many dependiencies like being able to navigate an app with pyqt or using something web based with flask so I thought this might be easy enough to use.
-# https://github.com/Cramessar/Coding-Temple/blob/main/Favorite_Movies_Project.py
+#Link to movies might not be an exact link but should work well enough.
+#https://github.com/Cramessar/Coding-Temple/blob/main/Favorite_Movies_Project.py
 
 import requests
 from PIL import Image #requires pillow, "pip install pillow" in terminal
