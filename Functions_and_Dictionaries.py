@@ -47,3 +47,5 @@ def calc_input():
 
 if __name__ == "__main__":
     calc_input()
+
+"https://github.com/Cramessar/Coding-Temple/blob/main/Functions_and_Dictionaries.py"
