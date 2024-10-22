@@ -13,7 +13,7 @@ movies = {}
 
 
 def fetch_movie_data(title):
-    api_key = "d549d0ec"  # Replace with your API key from IMDB, https://www.omdbapi.com/apikey.aspx
+    api_key = "APIKEY"  # Replace with your API key from IMDB, https://www.omdbapi.com/apikey.aspx
     url = f"http://www.omdbapi.com/?t={title}&apikey={api_key}"
     
     response = requests.get(url)
