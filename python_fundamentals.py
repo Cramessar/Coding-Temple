@@ -19,3 +19,5 @@ print("\nSorted list of hobbies alphabetically:")
 
 for hobby in hobbies:
     print(hobby)
+
+https://github.com/Cramessar/Coding-Temple/blob/main/python_fundamentals.py
