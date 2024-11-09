@@ -1,5 +1,6 @@
 #vowel count kata
-def vowel_count(text):
+#need to read carefully and not just make changes 
+def get_count(text):
     vowels = ["a", "e", "i", "o", "u"]
     count = 0
     for char in text:
@@ -7,12 +8,7 @@ def vowel_count(text):
             count += 1
     return count
 
-text = input("Enter a word, and we will count the vowels: ").lower()
-print("Number of vowels:", vowel_count(text))
-###this isnt working in code wars and I dont see a clear reason why. 
-# Return the number (count) of vowels in the given string. [line 8 ]
-# We will consider a, e, i, o, u as vowels for this Kata (but not y). [line 3 defining the list]
-# The input string will only consist of lower case letters and/or spaces [.lower()]
+
 
 #number as string kata
 def number_to_string(number):
