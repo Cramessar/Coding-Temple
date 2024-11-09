@@ -1,6 +1,0 @@
-print("The Cave 🗻")
-print("Can you find the legendary treasure? 💎\n")
-health = int(input("Enter your health (0-100): "))
-energy = int(input("Enter your energy (0-100): "))
-has_sword = input("Do you have a sword? (y or n): ").strip().lower()
-print("\nYou enter a dark, damp cave. It's eerily silent...")
