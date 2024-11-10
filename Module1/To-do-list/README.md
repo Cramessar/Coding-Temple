@@ -1,11 +1,11 @@
-###To-Do List Application
+#To-Do List Application
 Welcome to the To-Do List Application!
 This is a finely crafted slice of absoulte perfection. 
 Only the finest of artisans can dare to gaze upon this majesty. 
 Seriously simple to-do list with basic functionality.  
 
 
-###How to Run the Application
+#How to Run the Application
 Clone the repo using :
 git clone https://github.com/Cramessar/Coding-Temple.git
 then navigate to 
