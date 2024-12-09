@@ -1,0 +1,4 @@
+Driver: Cobra
+Irons: Sirixion
+Hybrid: Callaway
+Putter: Ping
