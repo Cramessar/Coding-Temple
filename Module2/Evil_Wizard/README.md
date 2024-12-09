@@ -54,13 +54,13 @@ If you're reading this, you probably already know that Final Fantasy X is a mast
 
 A Story That Hits Hard: A tale of love, loss, and blitzball. You laugh, you cry, and you question the meaning of life (and spheres).
 
-Tidus’ Laugh: Ha-ha-ha-ha-ha-ha! It’s a meme, it’s a mood, it’s art.
+Tidus’ Laugh: Ha-ha-ha-ha-ha-ha! It’s a meme, it's cringe, it’s a mood, it’s art.
 
-Auron’s Cool Factor: He’s the guy who shows up, drops wisdom bombs, and disappears into the night.
+Auron’s Cool Factor: He’s the guy who shows up, drops wisdom bombs, and disappears into the night. The man personifies the meme, ""I have two jobs I drink and I know things."
 
 Yuna’s Summons: They’re huge, they’re epic, and they give you that feeling of “Yeah, I’ve got this!” (until you don’t).
 
-The Music: From the emotional To Zanarkand to the headbanging Otherworld, every track is a banger.
+The Music: From the emotional To Zanarkand to the headbanging Otherworld, every track is a banger. You have no idea the restraint it took to not put hymn of the fayth as the background music for this whole project.
 
 Blitzball: It’s confusing, it’s infuriating, and somehow, you can’t stop playing it.
 
