@@ -1,0 +1,3 @@
+Writing to a file from Python!
+Adding more content with "a" mode
+Chris is the best and most amazing person.
